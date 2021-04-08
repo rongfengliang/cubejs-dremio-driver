@@ -17,7 +17,9 @@
     "@cubejs-backend/schema-compiler": "^0.26.81",
     "@cubejs-backend/shared": "^0.26.81",
     "axios": "^0.21.1",
-    "moment": "^2.24.0"
+    "moment": "^2.24.0",
+    "moment-timezone": "^0.5.33",
+    "sqlstring": "^2.3.2"
   },
   "license": "Apache-2.0",
   "devDependencies": {
