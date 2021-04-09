@@ -165,7 +165,14 @@ class DremioDriver extends BaseDriver {
   }
 
   informationSchemaQuery() {
-    const q = `${super.informationSchemaQuery()} AND columns.table_schema NOT IN ('INFORMATION_SCHEMA', 'sys.cache')`;
+    const q = `SELECT columns.column_name as ${this.quoteIdentifier('column_name')},
+    columns.table_name as ${this.quoteIdentifier('table_name')},
+    columns.table_schema as ${this.quoteIdentifier('table_schema')},
+    columns.data_type as ${this.quoteIdentifier('data_type')}
+FROM information_schema.columns
+join information_schema.views
+on columns.table_name=views.table_name
+WHERE columns.table_schema NOT IN ('information_schema', 'mysql', 'performance_schema', 'sys')  AND columns.table_schema NOT IN ('INFORMATION_SCHEMA', 'sys.cache')`;
     console.log(q);
     return q;
   }
