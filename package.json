@@ -2,7 +2,7 @@
   "name": "@dalongrong/mydremio-driver",
   "description": "Cube.js dremio database driver",
   "author": "rongfengliang",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "public": true,
   "repository": {
     "type": "git",
