@@ -15,7 +15,7 @@ class DremioFilter extends BaseFilter {
   likeIgnoreCase(column, not, param) {
     return ` ILIKE (${column}${not ? ' NOT' : ''}, CONCAT('%', ${this.allocateParam(param)}, '%'))`;
   }
-  
+
   castParameter() {
     if (this.definition().type === 'boolean') {
       return 'CAST(? AS BOOLEAN)';
