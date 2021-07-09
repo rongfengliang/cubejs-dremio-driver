@@ -2,14 +2,21 @@ const axios = require('axios');
 const SqlString = require('sqlstring');
 const { BaseDriver } = require('@cubejs-backend/query-orchestrator');
 const { getEnv, pausePromise } = require('@cubejs-backend/shared');
-
+const Agent = require('agentkeepalive');
 const DremioQuery = require('./DremioQuery');
-
 // limit - Determines how many rows are returned (maximum of 500). Default: 100
 // @see https://docs.dremio.com/rest-api/jobs/get-job.html
 const DREMIO_JOB_LIMIT = 500;
 
 const applyParams = (query, params) => SqlString.format(query, params);
+
+// http agent maybe config with env
+const keepaliveAgent = new Agent({
+  maxSockets: 500,
+  maxFreeSockets: 40,
+  timeout: 60000, // active socket keepalive for 60 seconds
+  freeSocketTimeout: 30000, // free socket keepalive for 30 seconds
+});
 
 class DremioDriver extends BaseDriver {
   static dialectClass() {
@@ -59,6 +66,8 @@ class DremioDriver extends BaseDriver {
     const { data } = await axios.post(`${this.config.url}/apiv2/login`, {
       userName: this.config.user,
       password: this.config.password
+    },{
+      HttpsAgent:keepaliveAgent
     });
 
     this.authToken = data;
@@ -83,6 +92,7 @@ class DremioDriver extends BaseDriver {
         Authorization: token
       },
       data,
+      HttpsAgent:keepaliveAgent
     });
   }
 
