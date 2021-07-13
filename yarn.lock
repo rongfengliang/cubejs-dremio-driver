@@ -855,7 +855,7 @@
     eslint-plugin-import "^2.22.1"
     eslint-plugin-node "^9.2.0"
 
-"@cubejs-backend/query-orchestrator@^0.27.47":
+"@cubejs-backend/query-orchestrator@^0.27.49":
   version "0.27.49"
   resolved "https://registry.nlark.com/@cubejs-backend/query-orchestrator/download/@cubejs-backend/query-orchestrator-0.27.49.tgz#cb03d6870cbf582734f62955c7ddba8fc6449fd1"
   integrity sha1-ywPWhwy/WCc09ilVx926j8ZEn9E=
@@ -867,7 +867,7 @@
     ramda "^0.27.0"
     redis "^3.0.2"
 
-"@cubejs-backend/schema-compiler@^0.27.47":
+"@cubejs-backend/schema-compiler@^0.27.49":
   version "0.27.49"
   resolved "https://registry.nlark.com/@cubejs-backend/schema-compiler/download/@cubejs-backend/schema-compiler-0.27.49.tgz#183a7ed50c8dafb34650b43cc84f8f21b5609a7b"
   integrity sha1-GDp+1QyNr7NGULQ8yE+PIbVgmns=
