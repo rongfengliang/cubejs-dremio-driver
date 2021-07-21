@@ -855,12 +855,12 @@
     eslint-plugin-import "^2.22.1"
     eslint-plugin-node "^9.2.0"
 
-"@cubejs-backend/query-orchestrator@^0.28.0":
-  version "0.28.0"
-  resolved "https://registry.nlark.com/@cubejs-backend/query-orchestrator/download/@cubejs-backend/query-orchestrator-0.28.0.tgz#aab2c4f09748aa4aaf08d0ee7884cb69469b44dc"
-  integrity sha1-qrLE8JdIqkqvCNDueITLaUabRNw=
+"@cubejs-backend/query-orchestrator@^0.28.3":
+  version "0.28.3"
+  resolved "https://registry.nlark.com/@cubejs-backend/query-orchestrator/download/@cubejs-backend/query-orchestrator-0.28.3.tgz#b3d6f8867bbdd4b80d79e1539c60b21955f6b4b0"
+  integrity sha1-s9b4hnu91LgNeeFTnGCyGVX2tLA=
   dependencies:
-    "@cubejs-backend/shared" "^0.28.0"
+    "@cubejs-backend/shared" "^0.28.2"
     generic-pool "^3.7.1"
     ioredis "^4.19.4"
     lru-cache "^6.0.0"
@@ -869,10 +869,10 @@
     ramda "^0.27.0"
     redis "^3.0.2"
 
-"@cubejs-backend/schema-compiler@^0.28.0":
-  version "0.28.0"
-  resolved "https://registry.nlark.com/@cubejs-backend/schema-compiler/download/@cubejs-backend/schema-compiler-0.28.0.tgz#bef17e3a4cead24a0e0bd7e5b09d77a65f6669c2"
-  integrity sha1-vvF+Okzq0koOC9flsJ13pl9macI=
+"@cubejs-backend/schema-compiler@^0.28.3":
+  version "0.28.3"
+  resolved "https://registry.nlark.com/@cubejs-backend/schema-compiler/download/@cubejs-backend/schema-compiler-0.28.3.tgz#559532abb82d5e42c31f8196065d2acac82199c7"
+  integrity sha1-VZUyq7gtXkLDH4GWBl0qysghmcc=
   dependencies:
     "@babel/code-frame" "^7.12.11"
     "@babel/core" "^7.12.10"
@@ -882,7 +882,7 @@
     "@babel/standalone" "^7.12.10"
     "@babel/traverse" "^7.12.10"
     "@babel/types" "^7.12.12"
-    "@cubejs-backend/shared" "^0.28.0"
+    "@cubejs-backend/shared" "^0.28.2"
     "@hapi/joi" "^15.1.1"
     antlr4ts "0.5.0-alpha.4"
     camelcase "^6.2.0"
@@ -896,10 +896,10 @@
     ramda "^0.27.0"
     syntax-error "^1.3.0"
 
-"@cubejs-backend/shared@^0.28.0":
-  version "0.28.0"
-  resolved "https://registry.nlark.com/@cubejs-backend/shared/download/@cubejs-backend/shared-0.28.0.tgz#b8b0ec7fc3664fe3262685d5b11f2c8659ad7ff0"
-  integrity sha1-uLDsf8NmT+MmJoXVsR8shlmtf/A=
+"@cubejs-backend/shared@^0.28.2":
+  version "0.28.2"
+  resolved "https://registry.nlark.com/@cubejs-backend/shared/download/@cubejs-backend/shared-0.28.2.tgz#cde1e12f6eaeb224842dd2eae592de7b40e3706e"
+  integrity sha1-zeHhL26usiSELdLq5ZLee0DjcG4=
   dependencies:
     "@oclif/color" "^0.1.2"
     bytes "^3.1.0"
