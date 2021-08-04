@@ -2,7 +2,7 @@
   "name": "@dalongrong/mydremio-driver",
   "description": "Cube.js dremio database driver",
   "author": "rongfengliang",
-  "version": "2.0.19",
+  "version": "2.0.20",
   "public": true,
   "repository": {
     "type": "git",
@@ -13,8 +13,8 @@
   },
   "main": "driver/index.js",
   "dependencies": {
-    "@cubejs-backend/query-orchestrator": "^0.28.10",
-    "@cubejs-backend/schema-compiler": "^0.28.10",
+    "@cubejs-backend/query-orchestrator": "^0.28.11",
+    "@cubejs-backend/schema-compiler": "^0.28.11",
     "@cubejs-backend/shared": "^0.28.10",
     "agentkeepalive": "^4.1.4",
     "axios": "^0.21.1",
