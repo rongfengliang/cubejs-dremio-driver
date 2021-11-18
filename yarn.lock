@@ -855,24 +855,24 @@
     eslint-plugin-import "^2.22.1"
     eslint-plugin-node "^9.2.0"
 
-"@cubejs-backend/query-orchestrator@^0.28.24":
-  version "0.28.24"
-  resolved "https://registry.nlark.com/@cubejs-backend/query-orchestrator/download/@cubejs-backend/query-orchestrator-0.28.24.tgz?cache=0&sync_timestamp=1629382369290&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40cubejs-backend%2Fquery-orchestrator%2Fdownload%2F%40cubejs-backend%2Fquery-orchestrator-0.28.24.tgz#adeb660444e9ef10dd4d3bc2c9af54b075e9e1ef"
-  integrity sha1-retmBETp7xDdTTvCya9UsHXp4e8=
+"@cubejs-backend/query-orchestrator@^0.28.56":
+  version "0.28.56"
+  resolved "https://registry.npmmirror.com/@cubejs-backend/query-orchestrator/download/@cubejs-backend/query-orchestrator-0.28.56.tgz#d5c4025dff4be3aef7d0652fd382409e68c93f0e"
+  integrity sha512-jp07SV/lvZZyeqz3T12vut4+5ILwTn1Hfj1vsCUbkd4P9uK5Ugb0uDwz63pI51h2mqWhd8xlLr/yCq79kWEVXA==
   dependencies:
-    "@cubejs-backend/shared" "^0.28.24"
+    "@cubejs-backend/shared" "^0.28.55"
     generic-pool "^3.7.1"
-    ioredis "^4.19.4"
+    ioredis "^4.27.8"
     lru-cache "^6.0.0"
     moment-range "^4.0.2"
     moment-timezone "^0.5.33"
     ramda "^0.27.0"
     redis "^3.0.2"
 
-"@cubejs-backend/schema-compiler@^0.28.25":
-  version "0.28.25"
-  resolved "https://registry.nlark.com/@cubejs-backend/schema-compiler/download/@cubejs-backend/schema-compiler-0.28.25.tgz#643cd43cf5aa50291eb55170774dc9549565a2fc"
-  integrity sha1-ZDzUPPWqUCketVFwd03JVJVlovw=
+"@cubejs-backend/schema-compiler@^0.28.56":
+  version "0.28.56"
+  resolved "https://registry.npmmirror.com/@cubejs-backend/schema-compiler/download/@cubejs-backend/schema-compiler-0.28.56.tgz?cache=0&sync_timestamp=1636881519837&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40cubejs-backend%2Fschema-compiler%2Fdownload%2F%40cubejs-backend%2Fschema-compiler-0.28.56.tgz#b15edb7906c4cd148ef1026658d20c5fc814d0e6"
+  integrity sha512-Icvy/pnCiUmxllgbAxhQps7ym33cOQ6AiLLKhtJqxx2UPv3X6je2vbITCqxLW1JYruApDBLdfeaGMwrv3SrREQ==
   dependencies:
     "@babel/code-frame" "^7.12.11"
     "@babel/core" "^7.12.10"
@@ -882,8 +882,8 @@
     "@babel/standalone" "^7.12.10"
     "@babel/traverse" "^7.12.10"
     "@babel/types" "^7.12.12"
-    "@cubejs-backend/shared" "^0.28.24"
-    "@hapi/joi" "^15.1.1"
+    "@cubejs-backend/shared" "^0.28.55"
+    "@hapi/joi" "^17.1.1"
     antlr4ts "0.5.0-alpha.4"
     camelcase "^6.2.0"
     cron-parser "^3.5.0"
@@ -896,10 +896,10 @@
     ramda "^0.27.0"
     syntax-error "^1.3.0"
 
-"@cubejs-backend/shared@^0.28.24":
-  version "0.28.24"
-  resolved "https://registry.nlark.com/@cubejs-backend/shared/download/@cubejs-backend/shared-0.28.24.tgz?cache=0&sync_timestamp=1629382368097&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40cubejs-backend%2Fshared%2Fdownload%2F%40cubejs-backend%2Fshared-0.28.24.tgz#bac44b9d33ce94c94c89c37bf239e8a51bff081f"
-  integrity sha1-usRLnTPOlMlMicN78jnopRv/CB8=
+"@cubejs-backend/shared@^0.28.55":
+  version "0.28.55"
+  resolved "https://registry.npmmirror.com/@cubejs-backend/shared/download/@cubejs-backend/shared-0.28.55.tgz#ba0785dbe5853b8b72b6bbe4a90e15412e19a6fc"
+  integrity sha512-bcSJhB63ilixM1xIAjv6gsxmH8RAUvA2DD4K/oQTY8We9I8NSHT+XCiy7FpgywbRzDdvW/lM2JTWq2gkB5v43A==
   dependencies:
     "@oclif/color" "^0.1.2"
     bytes "^3.1.0"
@@ -929,37 +929,45 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@hapi/address@2.x.x":
-  version "2.1.4"
-  resolved "https://registry.npm.taobao.org/@hapi/address/download/@hapi/address-2.1.4.tgz#5d67ed43f3fd41a69d4b9ff7b56e7c0d1d0a81e5"
-  integrity sha1-XWftQ/P9QaadS5/3tW58DR0KgeU=
-
-"@hapi/bourne@1.x.x":
-  version "1.3.2"
-  resolved "https://registry.npm.taobao.org/@hapi/bourne/download/@hapi/bourne-1.3.2.tgz#0a7095adea067243ce3283e1b56b8a8f453b242a"
-  integrity sha1-CnCVreoGckPOMoPhtWuKj0U7JCo=
-
-"@hapi/hoek@8.x.x", "@hapi/hoek@^8.3.0":
-  version "8.5.1"
-  resolved "https://registry.npm.taobao.org/@hapi/hoek/download/@hapi/hoek-8.5.1.tgz?cache=0&sync_timestamp=1609087071675&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40hapi%2Fhoek%2Fdownload%2F%40hapi%2Fhoek-8.5.1.tgz#fde96064ca446dec8c55a8c2f130957b070c6e06"
-  integrity sha1-/elgZMpEbeyMVajC8TCVewcMbgY=
-
-"@hapi/joi@^15.1.1":
-  version "15.1.1"
-  resolved "https://registry.npm.taobao.org/@hapi/joi/download/@hapi/joi-15.1.1.tgz#c675b8a71296f02833f8d6d243b34c57b8ce19d7"
-  integrity sha1-xnW4pxKW8Cgz+NbSQ7NMV7jOGdc=
+"@hapi/address@^4.0.1":
+  version "4.1.0"
+  resolved "https://registry.npmmirror.com/@hapi/address/download/@hapi/address-4.1.0.tgz#d60c5c0d930e77456fdcde2598e77302e2955e1d"
+  integrity sha1-1gxcDZMOd0Vv3N4lmOdzAuKVXh0=
   dependencies:
-    "@hapi/address" "2.x.x"
-    "@hapi/bourne" "1.x.x"
-    "@hapi/hoek" "8.x.x"
-    "@hapi/topo" "3.x.x"
+    "@hapi/hoek" "^9.0.0"
 
-"@hapi/topo@3.x.x":
-  version "3.1.6"
-  resolved "https://registry.npm.taobao.org/@hapi/topo/download/@hapi/topo-3.1.6.tgz#68d935fa3eae7fdd5ab0d7f953f3205d8b2bfc29"
-  integrity sha1-aNk1+j6uf91asNf5U/MgXYsr/Ck=
+"@hapi/formula@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.npmmirror.com/@hapi/formula/download/@hapi/formula-2.0.0.tgz#edade0619ed58c8e4f164f233cda70211e787128"
+  integrity sha1-7a3gYZ7VjI5PFk8jPNpwIR54cSg=
+
+"@hapi/hoek@^9.0.0":
+  version "9.2.1"
+  resolved "https://registry.npmmirror.com/@hapi/hoek/download/@hapi/hoek-9.2.1.tgz?cache=0&sync_timestamp=1632776440309&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40hapi%2Fhoek%2Fdownload%2F%40hapi%2Fhoek-9.2.1.tgz#9551142a1980503752536b5050fd99f4a7f13b17"
+  integrity sha1-lVEUKhmAUDdSU2tQUP2Z9KfxOxc=
+
+"@hapi/joi@^17.1.1":
+  version "17.1.1"
+  resolved "https://registry.npmmirror.com/@hapi/joi/download/@hapi/joi-17.1.1.tgz#9cc8d7e2c2213d1e46708c6260184b447c661350"
+  integrity sha1-nMjX4sIhPR5GcIxiYBhLRHxmE1A=
   dependencies:
-    "@hapi/hoek" "^8.3.0"
+    "@hapi/address" "^4.0.1"
+    "@hapi/formula" "^2.0.0"
+    "@hapi/hoek" "^9.0.0"
+    "@hapi/pinpoint" "^2.0.0"
+    "@hapi/topo" "^5.0.0"
+
+"@hapi/pinpoint@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.npmmirror.com/@hapi/pinpoint/download/@hapi/pinpoint-2.0.0.tgz#805b40d4dbec04fc116a73089494e00f073de8df"
+  integrity sha1-gFtA1NvsBPwRanMIlJTgDwc96N8=
+
+"@hapi/topo@^5.0.0":
+  version "5.1.0"
+  resolved "https://registry.nlark.com/@hapi/topo/download/@hapi/topo-5.1.0.tgz#dc448e332c6c6e37a4dc02fd84ba8d44b9afb012"
+  integrity sha1-3ESOMyxsbjek3AL9hLqNRLmvsBI=
+  dependencies:
+    "@hapi/hoek" "^9.0.0"
 
 "@nodelib/fs.scandir@2.1.4":
   version "2.1.4"
@@ -1214,12 +1222,12 @@ at-least-node@^1.0.0:
   resolved "https://registry.npm.taobao.org/at-least-node/download/at-least-node-1.0.0.tgz#602cd4b46e844ad4effc92a8011a3c46e0238dc2"
   integrity sha1-YCzUtG6EStTv/JKoARo8RuAjjcI=
 
-axios@^0.21.1:
-  version "0.21.1"
-  resolved "https://registry.npm.taobao.org/axios/download/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
-  integrity sha1-IlY0gZYvTWvemnbVFu8OXTwJsrg=
+axios@^0.24.0:
+  version "0.24.0"
+  resolved "https://registry.npmmirror.com/axios/download/axios-0.24.0.tgz#804e6fa1e4b9c5288501dd9dff56a7a0940d20d6"
+  integrity sha1-gE5voeS5xSiFAd2d/1anoJQNINY=
   dependencies:
-    follow-redirects "^1.10.0"
+    follow-redirects "^1.14.4"
 
 babel-plugin-dynamic-import-node@^2.3.3:
   version "2.3.3"
@@ -1992,10 +2000,10 @@ flatted@^3.1.0:
   resolved "https://registry.npm.taobao.org/flatted/download/flatted-3.1.1.tgz#c4b489e80096d9df1dfc97c79871aea7c617c469"
   integrity sha1-xLSJ6ACW2d8d/JfHmHGup8YXxGk=
 
-follow-redirects@^1.10.0:
-  version "1.13.3"
-  resolved "https://registry.npm.taobao.org/follow-redirects/download/follow-redirects-1.13.3.tgz?cache=0&sync_timestamp=1614437038110&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Ffollow-redirects%2Fdownload%2Ffollow-redirects-1.13.3.tgz#e5598ad50174c1bc4e872301e82ac2cd97f90267"
-  integrity sha1-5VmK1QF0wbxOhyMB6CrCzZf5Amc=
+follow-redirects@^1.14.4:
+  version "1.14.5"
+  resolved "https://registry.npmmirror.com/follow-redirects/download/follow-redirects-1.14.5.tgz?cache=0&sync_timestamp=1635857764332&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Ffollow-redirects%2Fdownload%2Ffollow-redirects-1.14.5.tgz#f09a5848981d3c772b5392309778523f8d85c381"
+  integrity sha1-8JpYSJgdPHcrU5Iwl3hSP42Fw4E=
 
 fs-constants@^1.0.0:
   version "1.0.0"
@@ -2208,16 +2216,17 @@ inherits@2, inherits@~2.0.3:
   resolved "https://registry.npm.taobao.org/inherits/download/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w=
 
-ioredis@^4.19.4:
-  version "4.25.0"
-  resolved "https://registry.npm.taobao.org/ioredis/download/ioredis-4.25.0.tgz#bc78d1fcda9d2b6f120f47c5764672734810b369"
-  integrity sha1-vHjR/NqdK28SD0fFdkZyc0gQs2k=
+ioredis@^4.27.8:
+  version "4.28.0"
+  resolved "https://registry.npmmirror.com/ioredis/download/ioredis-4.28.0.tgz#5a2be3f37ff2075e2332f280eaeb02ab4d9ff0d3"
+  integrity sha1-Wivj83/yB14jMvKA6usCq02f8NM=
   dependencies:
     cluster-key-slot "^1.1.0"
     debug "^4.3.1"
     denque "^1.1.0"
     lodash.defaults "^4.2.0"
     lodash.flatten "^4.4.0"
+    lodash.isarguments "^3.1.0"
     p-map "^2.1.0"
     redis-commands "1.7.0"
     redis-errors "^1.2.0"
@@ -2445,6 +2454,11 @@ lodash.flatten@^4.4.0:
   resolved "https://registry.npm.taobao.org/lodash.flatten/download/lodash.flatten-4.4.0.tgz#f31c22225a9632d2bbf8e4addbef240aa765a61f"
   integrity sha1-8xwiIlqWMtK7+OSt2+8kCqdlph8=
 
+lodash.isarguments@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.nlark.com/lodash.isarguments/download/lodash.isarguments-3.1.0.tgz#2f573d85c6a24289ff00663b491c1d338ff3458a"
+  integrity sha1-L1c9hcaiQon/AGY7SRwdM4/zRYo=
+
 lodash.truncate@^4.4.2:
   version "4.4.2"
   resolved "https://registry.npm.taobao.org/lodash.truncate/download/lodash.truncate-4.4.2.tgz#5a350da0b1113b837ecfffd5812cbe58d6eae193"
@@ -2517,6 +2531,13 @@ moment-timezone@^0.5.33:
   version "0.5.33"
   resolved "https://registry.npm.taobao.org/moment-timezone/download/moment-timezone-0.5.33.tgz#b252fd6bb57f341c9b59a5ab61a8e51a73bbd22c"
   integrity sha1-slL9a7V/NBybWaWrYajlGnO70iw=
+  dependencies:
+    moment ">= 2.9.0"
+
+moment-timezone@^0.5.34:
+  version "0.5.34"
+  resolved "https://registry.npmmirror.com/moment-timezone/download/moment-timezone-0.5.34.tgz?cache=0&sync_timestamp=1636519500695&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fmoment-timezone%2Fdownload%2Fmoment-timezone-0.5.34.tgz#a75938f7476b88f155d3504a9343f7519d9a405c"
+  integrity sha512-3zAEHh2hKUs3EXLESx/wsgw6IQdusOT8Bxm3D9UrHPQR7zlMmzwybC8zHEM1tQ4LJwP7fcxrWr8tuBg05fFCbg==
   dependencies:
     moment ">= 2.9.0"
 
