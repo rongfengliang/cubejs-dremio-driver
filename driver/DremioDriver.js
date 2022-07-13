@@ -22,10 +22,16 @@ class DremioDriver extends BaseDriver {
   static dialectClass() {
     return DremioQuery;
   }
-
+  /**
+     * Returns default concurrency value.
+     */
+  static getDefaultConcurrency() {
+    return 2;
+  }
   constructor(config = {}) {
     super();
-
+    // for cube.js latest version, if we write one custome driver should add this 
+    this.type="mydremio";
     this.config = {
       host: config.host || process.env.CUBEJS_DB_HOST || 'localhost',
       port: config.port || process.env.CUBEJS_DB_PORT || 9047,
@@ -34,7 +40,7 @@ class DremioDriver extends BaseDriver {
       database: config.database || process.env.CUBEJS_DB_NAME,
       ssl: config.ssl || process.env.CUBEJS_DB_SSL,
       ...config,
-      pollTimeout: (config.pollTimeout || getEnv('dbPollTimeout')) * 1000,
+      pollTimeout: (config.pollTimeout || getEnv('dbPollTimeout') || getEnv('dbQueryTimeout')) * 1000,
       pollMaxInterval: (config.pollMaxInterval || getEnv('dbPollMaxInterval')) * 1000,
     };
 

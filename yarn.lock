@@ -843,10 +843,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@cubejs-backend/linter@^0.28.6":
-  version "0.28.22"
-  resolved "https://registry.nlark.com/@cubejs-backend/linter/download/@cubejs-backend/linter-0.28.22.tgz#1b05a15526524e8d788d685830e46148625f5d8e"
-  integrity sha1-GwWhVSZSTo14jWhYMORhSGJfXY4=
+"@cubejs-backend/linter@^0.30.0":
+  version "0.30.0"
+  resolved "https://registry.npmmirror.com/@cubejs-backend/linter/-/linter-0.30.0.tgz#abb34b9317f73914f8f1b8487ff324adb8847cfa"
+  integrity sha512-iqehutgyqUsujNOwvXc+ujNUeXWuf1ILFHeJdxTf3f6V+ghNk3j1NpoSHaWXdKdyEhRQLMSYWwM03flqk168eA==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^4.16.1"
     "@typescript-eslint/parser" "^4.16.1"
@@ -855,12 +855,13 @@
     eslint-plugin-import "^2.22.1"
     eslint-plugin-node "^9.2.0"
 
-"@cubejs-backend/query-orchestrator@^0.28.56":
-  version "0.28.56"
-  resolved "https://registry.npmmirror.com/@cubejs-backend/query-orchestrator/download/@cubejs-backend/query-orchestrator-0.28.56.tgz#d5c4025dff4be3aef7d0652fd382409e68c93f0e"
-  integrity sha512-jp07SV/lvZZyeqz3T12vut4+5ILwTn1Hfj1vsCUbkd4P9uK5Ugb0uDwz63pI51h2mqWhd8xlLr/yCq79kWEVXA==
+"@cubejs-backend/query-orchestrator@^0.30.34":
+  version "0.30.34"
+  resolved "https://registry.npmmirror.com/@cubejs-backend/query-orchestrator/-/query-orchestrator-0.30.34.tgz#056900baae99707ccf0e1f90dc566f9781a5edd7"
+  integrity sha512-aCU3g3UjKR7EZWz0SmYoe9naBzlalh2iQ0as3rsgiF/8xIBFAK8LqlWR29vbKuqnlZrwfYotIFvU4qLeN+jkcA==
   dependencies:
-    "@cubejs-backend/shared" "^0.28.55"
+    "@cubejs-backend/shared" "^0.30.34"
+    es5-ext "0.10.53"
     generic-pool "^3.7.1"
     ioredis "^4.27.8"
     lru-cache "^6.0.0"
@@ -869,10 +870,10 @@
     ramda "^0.27.0"
     redis "^3.0.2"
 
-"@cubejs-backend/schema-compiler@^0.28.56":
-  version "0.28.56"
-  resolved "https://registry.npmmirror.com/@cubejs-backend/schema-compiler/download/@cubejs-backend/schema-compiler-0.28.56.tgz?cache=0&sync_timestamp=1636881519837&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40cubejs-backend%2Fschema-compiler%2Fdownload%2F%40cubejs-backend%2Fschema-compiler-0.28.56.tgz#b15edb7906c4cd148ef1026658d20c5fc814d0e6"
-  integrity sha512-Icvy/pnCiUmxllgbAxhQps7ym33cOQ6AiLLKhtJqxx2UPv3X6je2vbITCqxLW1JYruApDBLdfeaGMwrv3SrREQ==
+"@cubejs-backend/schema-compiler@^0.30.34":
+  version "0.30.34"
+  resolved "https://registry.npmmirror.com/@cubejs-backend/schema-compiler/-/schema-compiler-0.30.34.tgz#7547a0242b2d14709387ef79790a149bbbea26de"
+  integrity sha512-VYX0hpukRi3fvaeYZNMzPcZUsAEEzmZV4G9p8kkzFv0MUuFJ/6lXZpRLXoKRTXGSCM4z2kor1uPPHR3Jburk8g==
   dependencies:
     "@babel/code-frame" "^7.12.11"
     "@babel/core" "^7.12.10"
@@ -882,7 +883,7 @@
     "@babel/standalone" "^7.12.10"
     "@babel/traverse" "^7.12.10"
     "@babel/types" "^7.12.12"
-    "@cubejs-backend/shared" "^0.28.55"
+    "@cubejs-backend/shared" "^0.30.34"
     "@hapi/joi" "^17.1.1"
     antlr4ts "0.5.0-alpha.4"
     camelcase "^6.2.0"
@@ -896,10 +897,10 @@
     ramda "^0.27.0"
     syntax-error "^1.3.0"
 
-"@cubejs-backend/shared@^0.28.55":
-  version "0.28.55"
-  resolved "https://registry.npmmirror.com/@cubejs-backend/shared/download/@cubejs-backend/shared-0.28.55.tgz#ba0785dbe5853b8b72b6bbe4a90e15412e19a6fc"
-  integrity sha512-bcSJhB63ilixM1xIAjv6gsxmH8RAUvA2DD4K/oQTY8We9I8NSHT+XCiy7FpgywbRzDdvW/lM2JTWq2gkB5v43A==
+"@cubejs-backend/shared@^0.30.34":
+  version "0.30.34"
+  resolved "https://registry.npmmirror.com/@cubejs-backend/shared/-/shared-0.30.34.tgz#f797ef4918f51baf1de0bbe4252559bf5ffde474"
+  integrity sha512-jkEis/hqDDy0Yt6fqjxdopRGv0U6VZMEBVvqz/0hOvWSf6Aw3qsOOYltTNuRXohnResFvmGpPYILGEi4TAWiBw==
   dependencies:
     "@oclif/color" "^0.1.2"
     bytes "^3.1.0"
@@ -912,6 +913,7 @@
     moment-range "^4.0.1"
     moment-timezone "^0.5.33"
     node-fetch "^2.6.1"
+    shelljs "^0.8.5"
     throttle-debounce "^3.0.1"
 
 "@eslint/eslintrc@^0.4.0":
@@ -1117,10 +1119,10 @@ agent-base@6:
   dependencies:
     debug "4"
 
-agentkeepalive@^4.1.4:
-  version "4.1.4"
-  resolved "https://registry.npm.taobao.org/agentkeepalive/download/agentkeepalive-4.1.4.tgz#d928028a4862cb11718e55227872e842a44c945b"
-  integrity sha1-2SgCikhiyxFxjlUieHLoQqRMlFs=
+agentkeepalive@^4.2.1:
+  version "4.2.1"
+  resolved "https://registry.npmmirror.com/agentkeepalive/-/agentkeepalive-4.2.1.tgz#a7975cbb9f83b367f06c90cc51ff28fe7d499717"
+  integrity sha512-Zn4cw2NEqd+9fiSVWMscnjyQ1a8Yfoc5oBajLeo5w+YBHgDUcEBY2hS4YpTz6iN5f/2zQiktcuM6tS8x1p9dpA==
   dependencies:
     debug "^4.1.0"
     depd "^1.1.2"
@@ -1685,7 +1687,7 @@ es-to-primitive@^1.2.1:
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
-es5-ext@^0.10.35, es5-ext@^0.10.50:
+es5-ext@0.10.53, es5-ext@^0.10.35, es5-ext@^0.10.50:
   version "0.10.53"
   resolved "https://registry.npm.taobao.org/es5-ext/download/es5-ext-0.10.53.tgz#93c5a3acfdbef275220ad72644ad02ee18368de1"
   integrity sha1-k8WjrP2+8nUiCtcmRK0C7hg2jeE=
@@ -2069,6 +2071,18 @@ glob-parent@^5.0.0, glob-parent@^5.1.0:
   dependencies:
     is-glob "^4.0.1"
 
+glob@^7.0.0:
+  version "7.2.3"
+  resolved "https://registry.npmmirror.com/glob/-/glob-7.2.3.tgz#b8df0fb802bbfa8e89bd1d938b4e16578ed44f2b"
+  integrity sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==
+  dependencies:
+    fs.realpath "^1.0.0"
+    inflight "^1.0.4"
+    inherits "2"
+    minimatch "^3.1.1"
+    once "^1.3.0"
+    path-is-absolute "^1.0.0"
+
 glob@^7.1.3:
   version "7.1.6"
   resolved "https://registry.npm.taobao.org/glob/download/glob-7.1.6.tgz#141f33b81a7c2492e125594307480c46679278a6"
@@ -2216,6 +2230,11 @@ inherits@2, inherits@~2.0.3:
   resolved "https://registry.npm.taobao.org/inherits/download/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w=
 
+interpret@^1.0.0:
+  version "1.4.0"
+  resolved "https://registry.npmmirror.com/interpret/-/interpret-1.4.0.tgz#665ab8bc4da27a774a40584e812e3e0fa45b1a1e"
+  integrity sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==
+
 ioredis@^4.27.8:
   version "4.28.0"
   resolved "https://registry.npmmirror.com/ioredis/download/ioredis-4.28.0.tgz#5a2be3f37ff2075e2332f280eaeb02ab4d9ff0d3"
@@ -2259,6 +2278,13 @@ is-core-module@^2.2.0:
   version "2.2.0"
   resolved "https://registry.npm.taobao.org/is-core-module/download/is-core-module-2.2.0.tgz#97037ef3d52224d85163f5597b2b63d9afed981a"
   integrity sha1-lwN+89UiJNhRY/VZeytj2a/tmBo=
+  dependencies:
+    has "^1.0.3"
+
+is-core-module@^2.9.0:
+  version "2.9.0"
+  resolved "https://registry.npmmirror.com/is-core-module/-/is-core-module-2.9.0.tgz#e1c34429cd51c6dd9e09e0799e396e27b19a9c69"
+  integrity sha512-+5FPy5PnwmO3lvfMb0AsoPaBG+5KHUI0wYFXOtYPnVVVspTFUuMZNfNaNVRt3FZadstu2c8x23vykRW/NBoU6A==
   dependencies:
     has "^1.0.3"
 
@@ -2515,6 +2541,13 @@ minimatch@^3.0.4:
   dependencies:
     brace-expansion "^1.1.7"
 
+minimatch@^3.1.1:
+  version "3.1.2"
+  resolved "https://registry.npmmirror.com/minimatch/-/minimatch-3.1.2.tgz#19cd194bfd3e428f049a70817c038d89ab4be35b"
+  integrity sha512-J7p63hRiAjw1NDEww1W7i37+ByIrOWO5XQQAzZ3VOcL0PNybwpfmV/N05zFAzwQ9USyEcX6t3UO+K5aqBQOIHw==
+  dependencies:
+    brace-expansion "^1.1.7"
+
 minimist@^1.2.0, minimist@^1.2.5:
   version "1.2.5"
   resolved "https://registry.npm.taobao.org/minimist/download/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
@@ -2718,6 +2751,11 @@ path-parse@^1.0.6:
   resolved "https://registry.npm.taobao.org/path-parse/download/path-parse-1.0.6.tgz#d62dbb5679405d72c4737ec58600e9ddcf06d24c"
   integrity sha1-1i27VnlAXXLEc37FhgDp3c8G0kw=
 
+path-parse@^1.0.7:
+  version "1.0.7"
+  resolved "https://registry.npmmirror.com/path-parse/-/path-parse-1.0.7.tgz#fbc114b60ca42b30d9daf5858e4bd68bbedb6735"
+  integrity sha512-LDJzPVEEEPR+y48z93A0Ed0yXb8pAByGWo/k5YYdYgpY2/2EsOsksJrq7lOHxryrVOn1ejG6oAp8ahvOIQD8sw==
+
 path-type@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/path-type/download/path-type-2.0.0.tgz?cache=0&sync_timestamp=1611752074264&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpath-type%2Fdownload%2Fpath-type-2.0.0.tgz#f012ccb8415b7096fc2daa1054c3d72389594c73"
@@ -2829,6 +2867,13 @@ readable-stream@^2.3.0, readable-stream@^2.3.5:
     string_decoder "~1.1.1"
     util-deprecate "~1.0.1"
 
+rechoir@^0.6.2:
+  version "0.6.2"
+  resolved "https://registry.npmmirror.com/rechoir/-/rechoir-0.6.2.tgz#85204b54dba82d5742e28c96756ef43af50e3384"
+  integrity sha512-HFM8rkZ+i3zrV+4LQjwQ0W+ez98pApMGM3HUrN04j3CqzPOzl9nmP15Y8YXNm8QHGv/eacOVEjqhmWpkRV0NAw==
+  dependencies:
+    resolve "^1.1.6"
+
 redis-commands@1.7.0, redis-commands@^1.7.0:
   version "1.7.0"
   resolved "https://registry.npm.taobao.org/redis-commands/download/redis-commands-1.7.0.tgz#15a6fea2d58281e27b1cd1acfb4b293e278c3a89"
@@ -2924,6 +2969,15 @@ resolve-from@^4.0.0:
   resolved "https://registry.npm.taobao.org/resolve-from/download/resolve-from-4.0.0.tgz?cache=0&sync_timestamp=1610371330596&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fresolve-from%2Fdownload%2Fresolve-from-4.0.0.tgz#4abcd852ad32dd7baabfe9b40e00a36db5f392e6"
   integrity sha1-SrzYUq0y3Xuqv+m0DgCjbbXzkuY=
 
+resolve@^1.1.6:
+  version "1.22.1"
+  resolved "https://registry.npmmirror.com/resolve/-/resolve-1.22.1.tgz#27cb2ebb53f91abb49470a928bba7558066ac177"
+  integrity sha512-nBpuuYuY5jFsli/JIs1oldw6fOQCBioohqWZg/2hiaOybXOft4lonv85uDOKXdf8rhyK159cxU5cDcK/NKk8zw==
+  dependencies:
+    is-core-module "^2.9.0"
+    path-parse "^1.0.7"
+    supports-preserve-symlinks-flag "^1.0.0"
+
 resolve@^1.10.0, resolve@^1.10.1, resolve@^1.13.1, resolve@^1.14.2, resolve@^1.17.0:
   version "1.20.0"
   resolved "https://registry.npm.taobao.org/resolve/download/resolve-1.20.0.tgz?cache=0&sync_timestamp=1613055183799&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fresolve%2Fdownload%2Fresolve-1.20.0.tgz#629a013fb3f70755d6f0b7935cc1c2c5378b1975"
@@ -3002,6 +3056,15 @@ shebang-regex@^3.0.0:
   resolved "https://registry.npm.taobao.org/shebang-regex/download/shebang-regex-3.0.0.tgz#ae16f1644d873ecad843b0307b143362d4c42172"
   integrity sha1-rhbxZE2HPsrYQ7AwexQzYtTEIXI=
 
+shelljs@^0.8.5:
+  version "0.8.5"
+  resolved "https://registry.npmmirror.com/shelljs/-/shelljs-0.8.5.tgz#de055408d8361bed66c669d2f000538ced8ee20c"
+  integrity sha512-TiwcRcrkhHvbrZbnRcFYMLl30Dfov3HKqzp5tO5b4pt6G/SezKcYhmDg15zXVBswHmctSAQKznqNW2LO5tTDow==
+  dependencies:
+    glob "^7.0.0"
+    interpret "^1.0.0"
+    rechoir "^0.6.2"
+
 slash@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/slash/download/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
@@ -3052,10 +3115,10 @@ sprintf-js@~1.0.2:
   resolved "https://registry.npm.taobao.org/sprintf-js/download/sprintf-js-1.0.3.tgz#04e6926f662895354f3dd015203633b857297e2c"
   integrity sha1-BOaSb2YolTVPPdAVIDYzuFcpfiw=
 
-sqlstring@^2.3.2:
-  version "2.3.2"
-  resolved "https://registry.npm.taobao.org/sqlstring/download/sqlstring-2.3.2.tgz#cdae7169389a1375b18e885f2e60b3e460809514"
-  integrity sha1-za5xaTiaE3WxjohfLmCz5GCAlRQ=
+sqlstring@^2.3.3:
+  version "2.3.3"
+  resolved "https://registry.npmmirror.com/sqlstring/-/sqlstring-2.3.3.tgz#2ddc21f03bce2c387ed60680e739922c65751d0c"
+  integrity sha512-qC9iz2FlN7DQl3+wjwn3802RTyjCx7sDvfQEXchwa6CWOx07/WVfh91gBmQ9fahw8snwGEWU3xGzOt4tFyHLxg==
 
 standard-as-callback@^2.1.0:
   version "2.1.0"
@@ -3138,6 +3201,11 @@ supports-color@^7.1.0:
   integrity sha1-G33NyzK4E4gBs+R4umpRyqiWSNo=
   dependencies:
     has-flag "^4.0.0"
+
+supports-preserve-symlinks-flag@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmmirror.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
+  integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
 syntax-error@^1.3.0:
   version "1.4.0"

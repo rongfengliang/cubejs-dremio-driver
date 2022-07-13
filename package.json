@@ -2,7 +2,7 @@
   "name": "mydremio-cubejs-driver",
   "description": "Cube.js dremio database driver",
   "author": "rongfengliang",
-  "version": "1.0.0",
+  "version": "0.30.34",
   "public": true,
   "repository": {
     "type": "git",
@@ -13,17 +13,17 @@
   },
   "main": "driver/index.js",
   "dependencies": {
-    "@cubejs-backend/query-orchestrator": "^0.28.56",
-    "@cubejs-backend/schema-compiler": "^0.28.56",
-    "@cubejs-backend/shared": "^0.28.55",
-    "agentkeepalive": "^4.1.4",
+    "@cubejs-backend/query-orchestrator": "^0.30.34",
+    "@cubejs-backend/schema-compiler": "^0.30.34",
+    "@cubejs-backend/shared": "^0.30.34",
+    "agentkeepalive": "^4.2.1",
     "axios": "^0.24.0",
     "moment-timezone": "^0.5.34",
-    "sqlstring": "^2.3.2"
+    "sqlstring": "^2.3.3"
   },
   "license": "Apache-2.0",
   "devDependencies": {
-    "@cubejs-backend/linter": "^0.28.6"
+    "@cubejs-backend/linter": "^0.30.0"
   },
   "publishConfig": {
     "registry": "https://registry.npmjs.org/"

@@ -7,14 +7,16 @@ const GRANULARITY_TO_INTERVAL = {
   minute: (date) => `DATE_TRUNC('minute', ${date})`,
   hour: (date) => `DATE_TRUNC('hour', ${date})`,
   day: (date) => `DATE_TRUNC('day', ${date})`,
-  quarter: (date) => `DATE_TRUNC('quarter', ${date})`,
   month: (date) => `DATE_TRUNC('month', ${date})`,
+  quarter: (date) => `DATE_TRUNC('quarter', ${date})`,
   year: (date) => `DATE_TRUNC('year', ${date})`
 };
 
 class DremioFilter extends BaseFilter {
-  likeIgnoreCase(column, not, param) {
-    return ` ILIKE (${column}${not ? ' NOT' : ''}, CONCAT('%', ${this.allocateParam(param)}, '%'))`;
+  likeIgnoreCase(column, not, param, type) {
+    const p = (!type || type === 'contains' || type === 'ends') ? '%' : '';
+    const s = (!type || type === 'contains' || type === 'starts') ? '%' : '';
+    return ` ILIKE (${column}${not ? ' NOT' : ''}, CONCAT('${p}', ${this.allocateParam(param)}, '${s}'))`;
   }
 
   castParameter() {
@@ -43,8 +45,8 @@ class DremioQuery extends BaseQuery {
     return `TO_TIMESTAMP(${value}, 'YYYY-MM-DD"T"HH24:MI:SS.FFF')`;
   }
 
-  inDbTimeZone(date) {
-    return this.inIntegrationTimeZone(date).clone().utc().format(moment.HTML5_FMT.DATETIME_LOCAL_MS);
+  timestampFormat() {
+    return moment.HTML5_FMT.DATETIME_LOCAL_MS;
   }
 
   dateTimeCast(value) {
