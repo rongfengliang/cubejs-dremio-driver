@@ -843,6 +843,14 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@cubejs-backend/base-driver@^0.31.67":
+  version "0.31.67"
+  resolved "https://registry.npmjs.org/@cubejs-backend/base-driver/-/base-driver-0.31.67.tgz#8496b0d0b6dfb3837a80de527a3cc08aa2dd1006"
+  integrity sha512-5jnbqAQx9N+cGj3iREMQKBtdxBMdDmeY5afl5QmU9ybSNy51GW1FT+q+4XDNYpMB+63ZeMbRcYGkDOLacIWPEQ==
+  dependencies:
+    "@cubejs-backend/shared" "^0.31.67"
+    ramda "^0.27.0"
+
 "@cubejs-backend/linter@^0.30.0":
   version "0.30.0"
   resolved "https://registry.npmmirror.com/@cubejs-backend/linter/-/linter-0.30.0.tgz#abb34b9317f73914f8f1b8487ff324adb8847cfa"
@@ -855,25 +863,10 @@
     eslint-plugin-import "^2.22.1"
     eslint-plugin-node "^9.2.0"
 
-"@cubejs-backend/query-orchestrator@^0.30.34":
-  version "0.30.34"
-  resolved "https://registry.npmmirror.com/@cubejs-backend/query-orchestrator/-/query-orchestrator-0.30.34.tgz#056900baae99707ccf0e1f90dc566f9781a5edd7"
-  integrity sha512-aCU3g3UjKR7EZWz0SmYoe9naBzlalh2iQ0as3rsgiF/8xIBFAK8LqlWR29vbKuqnlZrwfYotIFvU4qLeN+jkcA==
-  dependencies:
-    "@cubejs-backend/shared" "^0.30.34"
-    es5-ext "0.10.53"
-    generic-pool "^3.7.1"
-    ioredis "^4.27.8"
-    lru-cache "^6.0.0"
-    moment-range "^4.0.2"
-    moment-timezone "^0.5.33"
-    ramda "^0.27.0"
-    redis "^3.0.2"
-
-"@cubejs-backend/schema-compiler@^0.30.34":
-  version "0.30.34"
-  resolved "https://registry.npmmirror.com/@cubejs-backend/schema-compiler/-/schema-compiler-0.30.34.tgz#7547a0242b2d14709387ef79790a149bbbea26de"
-  integrity sha512-VYX0hpukRi3fvaeYZNMzPcZUsAEEzmZV4G9p8kkzFv0MUuFJ/6lXZpRLXoKRTXGSCM4z2kor1uPPHR3Jburk8g==
+"@cubejs-backend/schema-compiler@^0.31.69":
+  version "0.31.69"
+  resolved "https://registry.npmjs.org/@cubejs-backend/schema-compiler/-/schema-compiler-0.31.69.tgz#ed8444bdf9e42b8913337b20e47cea5eae5ab2e7"
+  integrity sha512-kz9pLmTomLnjoJbfygoXbsfY4/Xb5lb5FGaY1JATWW7TJyM0/Ok7HCTQRrSrbJBgtBCUhogS7CBxUmOGIwiDgw==
   dependencies:
     "@babel/code-frame" "^7.12.11"
     "@babel/core" "^7.12.10"
@@ -883,24 +876,25 @@
     "@babel/standalone" "^7.12.10"
     "@babel/traverse" "^7.12.10"
     "@babel/types" "^7.12.12"
-    "@cubejs-backend/shared" "^0.30.34"
+    "@cubejs-backend/shared" "^0.31.67"
     "@hapi/joi" "^17.1.1"
     antlr4ts "0.5.0-alpha.4"
     camelcase "^6.2.0"
     cron-parser "^3.5.0"
     humps "^2.0.1"
     inflection "^1.12.0"
+    js-yaml "^4.1.0"
     lru-cache "^5.1.1"
     moment-range "^4.0.1"
     moment-timezone "^0.5.33"
     node-dijkstra "^2.5.0"
-    ramda "^0.27.0"
+    ramda "^0.27.2"
     syntax-error "^1.3.0"
 
-"@cubejs-backend/shared@^0.30.34":
-  version "0.30.34"
-  resolved "https://registry.npmmirror.com/@cubejs-backend/shared/-/shared-0.30.34.tgz#f797ef4918f51baf1de0bbe4252559bf5ffde474"
-  integrity sha512-jkEis/hqDDy0Yt6fqjxdopRGv0U6VZMEBVvqz/0hOvWSf6Aw3qsOOYltTNuRXohnResFvmGpPYILGEi4TAWiBw==
+"@cubejs-backend/shared@^0.31.67":
+  version "0.31.67"
+  resolved "https://registry.npmjs.org/@cubejs-backend/shared/-/shared-0.31.67.tgz#48e7ff083abce895661c4e77f259a86eeafeebe2"
+  integrity sha512-3y2J2OR6jDGedhxIOddJfnRAcU7m/dw+a8vE+yuE94lRjWorYdTy/b2oNVEGdzrEwvf28K9cJQ36sgJpVsDj6Q==
   dependencies:
     "@oclif/color" "^0.1.2"
     bytes "^3.1.0"
@@ -915,6 +909,7 @@
     node-fetch "^2.6.1"
     shelljs "^0.8.5"
     throttle-debounce "^3.0.1"
+    uuid "^8.3.2"
 
 "@eslint/eslintrc@^0.4.0":
   version "0.4.0"
@@ -1189,6 +1184,11 @@ argparse@^1.0.7:
   dependencies:
     sprintf-js "~1.0.2"
 
+argparse@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/argparse/-/argparse-2.0.1.tgz#246f50f3ca78a3240f6c997e8a9bd1eac49e4b38"
+  integrity sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==
+
 array-includes@^3.1.1:
   version "3.1.3"
   resolved "https://registry.npm.taobao.org/array-includes/download/array-includes-3.1.3.tgz#c7f619b382ad2afaf5326cddfdc0afc61af7690a"
@@ -1398,11 +1398,6 @@ cli-progress@^3.9.0:
     colors "^1.1.2"
     string-width "^4.2.0"
 
-cluster-key-slot@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.npm.taobao.org/cluster-key-slot/download/cluster-key-slot-1.1.0.tgz#30474b2a981fb12172695833052bc0d01336d10d"
-  integrity sha1-MEdLKpgfsSFyaVgzBSvA0BM20Q0=
-
 color-convert@^1.9.0:
   version "1.9.3"
   resolved "https://registry.npm.taobao.org/color-convert/download/color-convert-1.9.3.tgz#bb71850690e1f136567de629d2d5471deda4c1e8"
@@ -1516,7 +1511,7 @@ debug@^2.6.9:
   dependencies:
     ms "2.0.0"
 
-debug@^4.0.1, debug@^4.1.0, debug@^4.1.1, debug@^4.3.1:
+debug@^4.0.1, debug@^4.1.0, debug@^4.1.1:
   version "4.3.1"
   resolved "https://registry.npm.taobao.org/debug/download/debug-4.3.1.tgz?cache=0&sync_timestamp=1607566548985&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fdebug%2Fdownload%2Fdebug-4.3.1.tgz#f0d229c505e0c6d8c49ac553d1b13dc183f6b2ee"
   integrity sha1-8NIpxQXgxtjEmsVT0bE9wYP2su4=
@@ -1587,11 +1582,6 @@ define-properties@^1.1.3:
   integrity sha1-z4jabL7ib+bbcJT2HYcMvYTO6fE=
   dependencies:
     object-keys "^1.0.12"
-
-denque@^1.1.0, denque@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.npm.taobao.org/denque/download/denque-1.5.0.tgz#773de0686ff2d8ec2ff92914316a47b73b1c73de"
-  integrity sha1-dz3gaG/y2Owv+SkUMWpHtzscc94=
 
 depd@^1.1.2:
   version "1.1.2"
@@ -1687,7 +1677,7 @@ es-to-primitive@^1.2.1:
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
-es5-ext@0.10.53, es5-ext@^0.10.35, es5-ext@^0.10.50:
+es5-ext@^0.10.35, es5-ext@^0.10.50:
   version "0.10.53"
   resolved "https://registry.npm.taobao.org/es5-ext/download/es5-ext-0.10.53.tgz#93c5a3acfdbef275220ad72644ad02ee18368de1"
   integrity sha1-k8WjrP2+8nUiCtcmRK0C7hg2jeE=
@@ -2037,11 +2027,6 @@ functional-red-black-tree@^1.0.1:
   resolved "https://registry.npm.taobao.org/functional-red-black-tree/download/functional-red-black-tree-1.0.1.tgz#1b0ab3bd553b2a0d6399d29c0e3ea0b252078327"
   integrity sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=
 
-generic-pool@^3.7.1:
-  version "3.7.8"
-  resolved "https://registry.npm.taobao.org/generic-pool/download/generic-pool-3.7.8.tgz#202087bf5ec5e0b3bae39842a0ef98bcd4c1e450"
-  integrity sha1-ICCHv17F4LO645hCoO+YvNTB5FA=
-
 gensync@^1.0.0-beta.2:
   version "1.0.0-beta.2"
   resolved "https://registry.npm.taobao.org/gensync/download/gensync-1.0.0-beta.2.tgz#32a6ee76c3d7f52d46b2b1ae5d93fea8580a25e0"
@@ -2235,23 +2220,6 @@ interpret@^1.0.0:
   resolved "https://registry.npmmirror.com/interpret/-/interpret-1.4.0.tgz#665ab8bc4da27a774a40584e812e3e0fa45b1a1e"
   integrity sha512-agE4QfB2Lkp9uICn7BAqoscw4SZP9kTE2hxiFI3jBPmXJfdqiahTbUuKGsMoN2GtqL9AxhYioAcVvgsb1HvRbA==
 
-ioredis@^4.27.8:
-  version "4.28.0"
-  resolved "https://registry.npmmirror.com/ioredis/download/ioredis-4.28.0.tgz#5a2be3f37ff2075e2332f280eaeb02ab4d9ff0d3"
-  integrity sha1-Wivj83/yB14jMvKA6usCq02f8NM=
-  dependencies:
-    cluster-key-slot "^1.1.0"
-    debug "^4.3.1"
-    denque "^1.1.0"
-    lodash.defaults "^4.2.0"
-    lodash.flatten "^4.4.0"
-    lodash.isarguments "^3.1.0"
-    p-map "^2.1.0"
-    redis-commands "1.7.0"
-    redis-errors "^1.2.0"
-    redis-parser "^3.0.0"
-    standard-as-callback "^2.1.0"
-
 is-arrayish@^0.2.1:
   version "0.2.1"
   resolved "https://registry.npm.taobao.org/is-arrayish/download/is-arrayish-0.2.1.tgz#77c99840527aa8ecb1a8ba697b80645a7a926a9d"
@@ -2386,6 +2354,13 @@ js-yaml@^3.13.1:
     argparse "^1.0.7"
     esprima "^4.0.0"
 
+js-yaml@^4.1.0:
+  version "4.1.0"
+  resolved "https://registry.npmjs.org/js-yaml/-/js-yaml-4.1.0.tgz#c1fb65f8f5017901cdd2c951864ba18458a10602"
+  integrity sha512-wpxZs9NoxZaJESJGIZTyDEaYpl0FKSA+FB9aJiyemKhMwkxQg63h4T1KJgUGHpTqPDNRcmmYLugrRjJlBtWvRA==
+  dependencies:
+    argparse "^2.0.1"
+
 jsesc@^2.5.1:
   version "2.5.2"
   resolved "https://registry.npm.taobao.org/jsesc/download/jsesc-2.5.2.tgz#80564d2e483dacf6e8ef209650a67df3f0c283a4"
@@ -2470,20 +2445,10 @@ lodash.debounce@^4.0.8:
   resolved "https://registry.npm.taobao.org/lodash.debounce/download/lodash.debounce-4.0.8.tgz#82d79bff30a67c4005ffd5e2515300ad9ca4d7af"
   integrity sha1-gteb/zCmfEAF/9XiUVMArZyk168=
 
-lodash.defaults@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.npm.taobao.org/lodash.defaults/download/lodash.defaults-4.2.0.tgz#d09178716ffea4dde9e5fb7b37f6f0802274580c"
-  integrity sha1-0JF4cW/+pN3p5ft7N/bwgCJ0WAw=
-
 lodash.flatten@^4.4.0:
   version "4.4.0"
   resolved "https://registry.npm.taobao.org/lodash.flatten/download/lodash.flatten-4.4.0.tgz#f31c22225a9632d2bbf8e4addbef240aa765a61f"
   integrity sha1-8xwiIlqWMtK7+OSt2+8kCqdlph8=
-
-lodash.isarguments@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.nlark.com/lodash.isarguments/download/lodash.isarguments-3.1.0.tgz#2f573d85c6a24289ff00663b491c1d338ff3458a"
-  integrity sha1-L1c9hcaiQon/AGY7SRwdM4/zRYo=
 
 lodash.truncate@^4.4.2:
   version "4.4.2"
@@ -2553,7 +2518,7 @@ minimist@^1.2.0, minimist@^1.2.5:
   resolved "https://registry.npm.taobao.org/minimist/download/minimist-1.2.5.tgz#67d66014b66a6a8aaa0c083c5fd58df4e4e97602"
   integrity sha1-Z9ZgFLZqaoqqDAg8X9WN9OTpdgI=
 
-moment-range@^4.0.1, moment-range@^4.0.2:
+moment-range@^4.0.1:
   version "4.0.2"
   resolved "https://registry.npm.taobao.org/moment-range/download/moment-range-4.0.2.tgz#f7c3863df2a1ed7fd1822ba5a7bcf53a78701be9"
   integrity sha1-98OGPfKh7X/Rgiulp7z1OnhwG+k=
@@ -2567,17 +2532,22 @@ moment-timezone@^0.5.33:
   dependencies:
     moment ">= 2.9.0"
 
-moment-timezone@^0.5.34:
-  version "0.5.34"
-  resolved "https://registry.npmmirror.com/moment-timezone/download/moment-timezone-0.5.34.tgz?cache=0&sync_timestamp=1636519500695&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fmoment-timezone%2Fdownload%2Fmoment-timezone-0.5.34.tgz#a75938f7476b88f155d3504a9343f7519d9a405c"
-  integrity sha512-3zAEHh2hKUs3EXLESx/wsgw6IQdusOT8Bxm3D9UrHPQR7zlMmzwybC8zHEM1tQ4LJwP7fcxrWr8tuBg05fFCbg==
+moment-timezone@^0.5.41:
+  version "0.5.41"
+  resolved "https://registry.npmjs.org/moment-timezone/-/moment-timezone-0.5.41.tgz#a7ad3285fd24aaf5f93b8119a9d749c8039c64c5"
+  integrity sha512-e0jGNZDOHfBXJGz8vR/sIMXvBIGJJcqFjmlg9lmE+5KX1U7/RZNMswfD8nKnNCnQdKTIj50IaRKwl1fvMLyyRg==
   dependencies:
-    moment ">= 2.9.0"
+    moment "^2.29.4"
 
 "moment@>= 2.9.0":
   version "2.29.1"
   resolved "https://registry.npm.taobao.org/moment/download/moment-2.29.1.tgz#b2be769fa31940be9eeea6469c075e35006fa3d3"
   integrity sha1-sr52n6MZQL6e7qZGnAdeNQBvo9M=
+
+moment@^2.29.4:
+  version "2.29.4"
+  resolved "https://registry.npmjs.org/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
+  integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
 
 ms@2.0.0:
   version "2.0.0"
@@ -2707,11 +2677,6 @@ p-locate@^2.0.0:
   dependencies:
     p-limit "^1.1.0"
 
-p-map@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.npm.taobao.org/p-map/download/p-map-2.1.0.tgz#310928feef9c9ecc65b68b17693018a665cea175"
-  integrity sha1-MQko/u+cnsxltosXaTAYpmXOoXU=
-
 p-try@^1.0.0:
   version "1.0.0"
   resolved "https://registry.npm.taobao.org/p-try/download/p-try-1.0.0.tgz#cbc79cdbaf8fd4228e13f621f2b1a237c1b207b3"
@@ -2837,6 +2802,11 @@ ramda@^0.27.0:
   resolved "https://registry.npm.taobao.org/ramda/download/ramda-0.27.1.tgz#66fc2df3ef873874ffc2da6aa8984658abacf5c9"
   integrity sha1-Zvwt8++HOHT/wtpqqJhGWKus9ck=
 
+ramda@^0.27.2:
+  version "0.27.2"
+  resolved "https://registry.npmjs.org/ramda/-/ramda-0.27.2.tgz#84463226f7f36dc33592f6f4ed6374c48306c3f1"
+  integrity sha512-SbiLPU40JuJniHexQSAgad32hfwd+DRUdwF2PlVuI5RZD0/vahUco7R8vD86J/tcEKKF9vZrUVwgtmGCqlCKyA==
+
 read-pkg-up@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/read-pkg-up/download/read-pkg-up-2.0.0.tgz?cache=0&sync_timestamp=1616916249599&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fread-pkg-up%2Fdownload%2Fread-pkg-up-2.0.0.tgz#6b72a8048984e0c41e79510fd5e9fa99b3b549be"
@@ -2873,33 +2843,6 @@ rechoir@^0.6.2:
   integrity sha512-HFM8rkZ+i3zrV+4LQjwQ0W+ez98pApMGM3HUrN04j3CqzPOzl9nmP15Y8YXNm8QHGv/eacOVEjqhmWpkRV0NAw==
   dependencies:
     resolve "^1.1.6"
-
-redis-commands@1.7.0, redis-commands@^1.7.0:
-  version "1.7.0"
-  resolved "https://registry.npm.taobao.org/redis-commands/download/redis-commands-1.7.0.tgz#15a6fea2d58281e27b1cd1acfb4b293e278c3a89"
-  integrity sha1-Fab+otWCgeJ7HNGs+0spPieMOok=
-
-redis-errors@^1.0.0, redis-errors@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.npm.taobao.org/redis-errors/download/redis-errors-1.2.0.tgz#eb62d2adb15e4eaf4610c04afe1529384250abad"
-  integrity sha1-62LSrbFeTq9GEMBK/hUpOEJQq60=
-
-redis-parser@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.npm.taobao.org/redis-parser/download/redis-parser-3.0.0.tgz#b66d828cdcafe6b4b8a428a7def4c6bcac31c8b4"
-  integrity sha1-tm2CjNyv5rS4pCin3vTGvKwxyLQ=
-  dependencies:
-    redis-errors "^1.0.0"
-
-redis@^3.0.2:
-  version "3.1.0"
-  resolved "https://registry.npm.taobao.org/redis/download/redis-3.1.0.tgz#39daec130d74b78decca93513c61db0af5d86ce6"
-  integrity sha1-OdrsEw10t43sypNRPGHbCvXYbOY=
-  dependencies:
-    denque "^1.5.0"
-    redis-commands "^1.7.0"
-    redis-errors "^1.2.0"
-    redis-parser "^3.0.0"
 
 regenerate-unicode-properties@^8.2.0:
   version "8.2.0"
@@ -3119,11 +3062,6 @@ sqlstring@^2.3.3:
   version "2.3.3"
   resolved "https://registry.npmmirror.com/sqlstring/-/sqlstring-2.3.3.tgz#2ddc21f03bce2c387ed60680e739922c65751d0c"
   integrity sha512-qC9iz2FlN7DQl3+wjwn3802RTyjCx7sDvfQEXchwa6CWOx07/WVfh91gBmQ9fahw8snwGEWU3xGzOt4tFyHLxg==
-
-standard-as-callback@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.npm.taobao.org/standard-as-callback/download/standard-as-callback-2.1.0.tgz#8953fc05359868a77b5b9739a665c5977bb7df45"
-  integrity sha1-iVP8BTWYaKd7W5c5pmXFl3u330U=
 
 string-width@^4.2.0:
   version "4.2.2"
@@ -3380,6 +3318,11 @@ util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.npm.taobao.org/util-deprecate/download/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
   integrity sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8=
+
+uuid@^8.3.2:
+  version "8.3.2"
+  resolved "https://registry.npmjs.org/uuid/-/uuid-8.3.2.tgz#80d5b5ced271bb9af6c445f21a1a04c606cefbe2"
+  integrity sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg==
 
 v8-compile-cache@^2.0.3:
   version "2.3.0"

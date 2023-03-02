@@ -1,8 +1,12 @@
+const {
+  getEnv,
+  assertDataSource,
+  pausePromise,
+} = require('@cubejs-backend/shared');
 const axios = require('axios');
 const SqlString = require('sqlstring');
-const { BaseDriver } = require('@cubejs-backend/query-orchestrator');
-const { getEnv, pausePromise } = require('@cubejs-backend/shared');
 const Agent = require('agentkeepalive');
+const { BaseDriver } = require('@cubejs-backend/base-driver');
 const DremioQuery = require('./DremioQuery');
 // limit - Determines how many rows are returned (maximum of 500). Default: 100
 // @see https://docs.dremio.com/rest-api/jobs/get-job.html
@@ -28,26 +32,54 @@ class DremioDriver extends BaseDriver {
   static getDefaultConcurrency() {
     return 2;
   }
-  constructor(config = {}) {
-    super();
-    // for cube.js latest version, if we write one custome driver should add this 
-    this.type="mydremio";
-    this.config = {
-      host: config.host || process.env.CUBEJS_DB_HOST || 'localhost',
-      port: config.port || process.env.CUBEJS_DB_PORT || 9047,
-      user: config.user || process.env.CUBEJS_DB_USER,
-      password: config.password || process.env.CUBEJS_DB_PASS,
-      database: config.database || process.env.CUBEJS_DB_NAME,
-      ssl: config.ssl || process.env.CUBEJS_DB_SSL,
-      ...config,
-      pollTimeout: (config.pollTimeout || getEnv('dbPollTimeout') || getEnv('dbQueryTimeout')) * 1000,
-      pollMaxInterval: (config.pollMaxInterval || getEnv('dbPollMaxInterval')) * 1000,
-    };
-
-    const protocol = (this.config.ssl === true || this.config.ssl === 'true') ? 'https' : 'http';
-
-    this.config.url = `${protocol}://${this.config.host}:${this.config.port}`;
-  }
+    /**
+   * Class constructor.
+   */
+    constructor(config = {}) {
+      super();
+      this.type="mydremio";
+      const dataSource =
+        config.dataSource ||
+        assertDataSource('default');
+  
+      this.config = {
+        host:
+          config.host ||
+          getEnv('dbHost', { dataSource }) ||
+          'localhost',
+        port:
+          config.port ||
+          getEnv('dbPort', { dataSource }) ||
+          9047,
+        user:
+          config.user ||
+          getEnv('dbUser', { dataSource }),
+        password:
+          config.password ||
+          getEnv('dbPass', { dataSource }),
+        database:
+          config.database ||
+          getEnv('dbName', { dataSource }),
+        ssl:
+          config.ssl ||
+          getEnv('dbSsl', { dataSource }),
+        ...config,
+        pollTimeout: (
+          config.pollTimeout ||
+          getEnv('dbPollTimeout', { dataSource }) ||
+          getEnv('dbQueryTimeout', { dataSource })
+        ) * 1000,
+        pollMaxInterval: (
+          config.pollMaxInterval ||
+          getEnv('dbPollMaxInterval', { dataSource })
+        ) * 1000,
+      };
+      const protocol = (this.config.ssl === true || this.config.ssl === 'true')
+        ? 'https'
+        : 'http';
+      this.config.url =
+        `${protocol}://${this.config.host}:${this.config.port}`;
+    }
 
   /**
    * @public

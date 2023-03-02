@@ -1,6 +1,6 @@
 # cube.js dremio driver
 
-> fork form official driver 
+> fork form official driver
 
 ## Usage
 
